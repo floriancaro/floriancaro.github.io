@@ -1,0 +1,119 @@
+/* Responsive design styles for Florian Caro website */
+
+/* Base responsive styles */
+@media screen and (max-width: 1200px) {
+  .main {
+    margin: 0px 200px 0px 200px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    margin: 0px 100px 0px 100px;
+  }
+  
+  .one-two-grid-about {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .grid-item-img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 0.9em;
+  }
+  
+  .main {
+    margin: 0px 50px 0px 50px;
+    padding-bottom: 120px;
+  }
+  
+  .header {
+    width: 70%;
+    left: 15%;
+  }
+  
+  .nav-bar {
+    padding: 15px;
+    font-size: 1em;
+  }
+  
+  .nav-bar-button {
+    padding: 7px 15px;
+    font-size: 1em;
+  }
+  
+  .timestamp {
+    padding: 0px 50px 75px 50px;
+  }
+  
+  .side_by_side_maps img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 0.85em;
+  }
+  
+  .main {
+    margin: 0px 20px 0px 20px;
+  }
+  
+  .header {
+    width: 90%;
+    left: 5%;
+  }
+  
+  .nav-bar {
+    padding: 10px;
+    display: inline-block;
+    font-size: 0.95em;
+  }
+  
+  .nav-bar-button {
+    padding: 5px 10px;
+    font-size: 0.95em;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    line-height: 24px;
+    margin-top: 30px;
+  }
+  
+  .timestamp {
+    padding: 0px 20px 75px 20px;
+  }
+  
+  .side_by_side_maps {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-info {
+    word-wrap: break-word;
+  }
+}
+
+/* Mobile navigation adjustments */
+@media screen and (max-width: 600px) {
+  #navbar_external {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .nav-bar {
+    display: inline-block;
+    margin: 0 5px;
+  }
+}

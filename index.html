@@ -2,25 +2,29 @@
   <html lang="en">
     <head>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-    	<title>Florian Caro</title>
-
-      <link id = "theme" rel = "stylesheet" type = "text/css" href = "light_mode.css">
-  		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Florian Caro</title>
+      
+      <!-- Favicon -->
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+      <link rel="manifest" href="site.webmanifest">
+      
+      <link id="theme" rel="stylesheet" type="text/css" href="light_mode.css">
+      <link rel="stylesheet" type="text/css" href="responsive.css">
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       <script src="jquery-3.6.0.min.js"></script>
       <script src="scripts.js"></script>
-      <script>
-        $(function(){
-          $("#navbar_external").load("navbar.html");
-        });
-      </script>
     </head>
 
     <body>
 
-      	<div class="main">
+      <div class="main">
 
           <h1>Florian Caro</h1>
+          <div id="navbar_external"></div>
           <button type="button" class="nav-bar-button" id="theme-toggle-dark">Dark Mode</button>
           <button type="button" class="nav-bar-button" id="theme-toggle-light">Light mode</button>
 
@@ -99,7 +103,7 @@
                 <summary>
                   Der Zusammenang von Wahlbeteiligung und Einkommen: Eine Analyse der Landtagswahlen in Schleswig-Holstein und Nordrhein-Westfalen 2022 - with <a href="https://www.gsi.uni-muenchen.de/personen/wiss_mitarbeiter/jerome_schafer/index.html", target="_blank">Jérôme Schäfer</a> (2022)
                 </summary>
-                <p>Technical report prepared on request by <a href="https://zentrum-neue-sozialpolitik.org/projekte/vertrauen-einkommen-arbeitslosigkeit-wahlbeteiligung-landtagswahl/" target="_blank">Stiftung Grundeinkommen (now called Zentrum für neue Sozialpolitik)</a> investigating the correlation of unemployment rates and per capita income with election turnout in German state elections.</p>
+                <p>Technical report prepared on request by <a href="https://zentrum-neue-sozialpolitik.org/projekte/vertrauen-einkommen-arbeitslosigkeit-wahlbeteiligung/" target="_blank">Stiftung Grundeinkommen (now called Zentrum für neue Sozialpolitik)</a> investigating the correlation of unemployment rates and per capita income with election turnout in German state elections.</p>
                 <img style="max-width:604px;height: auto;width: 100%;" src="media/NRW_LTW2022_ALquote_wahlbeteiligung.jpg" alt="regression plot of election turnout on unemployment rate (NRW, Landtagswahl 2022)" />
                 <div class="side_by_side_maps">
                   <img style="max-width:300px;height: auto;width: 100%;" src="media/NRW_LTW2022_Erwerbstaetigkeit_Kreise.png" alt="NRW map with employment by county (2022)" />
